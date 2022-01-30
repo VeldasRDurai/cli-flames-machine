@@ -1,12 +1,17 @@
 {
   "name": "@veldasrdurai/flames-machine",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Find the relationship between using nostalgic FLAMES rule.",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VeldasRDurai/cli-flames-machine.git"
   },
+  "scripts": {
+    "start": "node ."
+  },
+  "bin": "./index.js",
   "author": "Veldas R Durai",
   "license": "ISC",
   "dependencies": {
