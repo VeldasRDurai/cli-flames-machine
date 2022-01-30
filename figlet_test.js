@@ -7,7 +7,7 @@ figlet("Hello World...!", {
             // For different font types : http://www.figlet.org/examples.html
         horizontalLayout: 'fitted', // "default", "full", "fitted", "controlled smushing", "universal smushing".
         verticalLayout: 'fitted',
-        // width: 80,
+        width: 80,
         whitespaceBreak: true
     }, ( err, data ) => {
         console.log( data );
