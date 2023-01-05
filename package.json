@@ -15,8 +15,10 @@
   "author": "Veldas R Durai",
   "license": "ISC",
   "dependencies": {
+    "center-align": "^1.0.1",
     "chalk": "^5.0.0",
     "chalk-animation": "^1.6.0",
+    "date-prompt": "^1.0.0",
     "figlet": "^1.5.2",
     "gradient-string": "^2.0.0",
     "inquirer": "^8.2.0",
