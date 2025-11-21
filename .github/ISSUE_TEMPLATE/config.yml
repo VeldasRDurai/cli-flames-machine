@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🛡️ Security Vulnerability Report
+    url: https://github.com/VeldasRDurai/cli-flames-machine/security/policy
+    about: Please report security vulnerabilities privately according to our security policy, not via a public issue.
+  - name: 💬 General Question or Discussion
+    url: https://github.com/VeldasRDurai/cli-flames-machine/discussions/new/general
+    about: Use GitHub Discussions for questions, general support, or proposing ideas not yet ready for a formal feature request.

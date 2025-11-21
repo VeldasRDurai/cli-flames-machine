@@ -1,0 +1,57 @@
+name: ✨ Feature Request / Enhancement
+description: Suggest an idea or new feature to improve the package.
+title: "[FEAT] "
+labels: ["type: enhancement", "needs triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new feature! Please provide as much detail as possible so we can understand the problem you're trying to solve.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The Problem This Feature Solves
+      description: Explain the use case. What are you trying to achieve that you currently cannot?
+      placeholder: Currently, I have to manually format the output JSON before saving it. A built-in formatting option would remove a manual step.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution or API Change
+      description: How should this feature work? If it involves a new public function or parameter, what would the API look like?
+      placeholder: |
+        I propose adding an optional boolean parameter `prettyPrint` to the main configuration object.
+        
+        Example:
+        ```javascript
+        const pkg = require('cli-flames-machine')({
+          ...,
+          prettyPrint: true // New option
+        });
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Considered Alternatives
+      description: Briefly describe any alternative solutions or workarounds you have already tried or considered.
+      placeholder: I currently use the built-in JSON.stringify(data, null, 2), but integrating it would be cleaner.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Final Checks
+      options:
+        - label: I have searched the existing [Issues] and [Discussions] to ensure this idea has not been suggested before.
+          required: true
+        - label: I have confirmed this feature is within the scope of this package's core mission.
+          required: true
