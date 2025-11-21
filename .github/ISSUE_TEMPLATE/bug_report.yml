@@ -1,0 +1,83 @@
+name: 🐛 Bug Report
+description: Report an unexpected error, incorrect behavior, or crash in the package.
+title: "[BUG] "
+labels: ["type: bug", "needs triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this! Please fill out the form below carefully to help us diagnose the issue quickly.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is. What did you expect to happen?
+      placeholder: The package throws a 'Cannot read properties of undefined' error when initialized without the 'options' object.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Provide clear, numbered steps to reproduce the error. A minimal code example is essential!
+      placeholder: |
+        1. Initialize the package: `const pkg = require('cli-flames-machine')()`
+        2. Call the method: `pkg.doSomething()`
+        3. Observe the console error.
+    validations:
+      required: true
+
+  - type: textarea
+    id: minimal-reproducible-example
+    attributes:
+      label: Minimal Reproducible Example (MRE)
+      description: Please paste a small, complete code snippet or link to a repository/CodeSandbox that demonstrates the issue.
+      placeholder: |
+        // Paste code here
+    validations:
+      required: true
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Package Version
+      description: What version of the package are you using? (Check your package.json or npm list)
+      placeholder: e.g. 1.2.5
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Select your operating system and runtime version.
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - Node.js (Specific Version)
+        - Browser (Specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js/Browser Version
+      description: Specify the exact runtime version (e.g., Node 18.10.0, Chrome 120.0).
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Final Checks
+      options:
+        - label: I have searched the existing [Issues] and [Discussions] for a similar report.
+          required: true
+        - label: I have confirmed that this bug exists in the latest version of the package.
+          required: false
